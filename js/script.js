@@ -12,7 +12,6 @@ let discount;
 let ticketPrice = travelDistance * 0.233 * (1 - discount)
 
 button.addEventListener('click', function(){
-    console.log('Il prezzo del biglietto ammonta a :' + ticketPrice.toFixed(2) + '€');
+    document.getElementById('output').innerHTML = 'Il prezzo del biglietto ammonta a :' + ticketPrice.toFixed(2) + '€';
 
 })
-
