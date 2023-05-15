@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,18 @@
     <title>TreniBoolean - Calcolo Biglietto</title>
 </head>
 <body>
-    
+    <main>
+        <section id="ticket_price">
+            <h1>Calcola il prezzo del tuo biglietto:</h1>
+            <form>
+                <label for="userAge">Inserisci la tua età:</label>
+                <input type="number" name="userAge" id="userAge" min="0" max="130">
+                <label for="travelDistance">Inserisci la distanza che desideri percorrere (km):</label>
+                <input type="number" name="travelDistance" id="travelDistance" min="0">
+            </form>
+            <p id="output">Il prezzo del biglietto ammonta a :</p>
+        </section>
+    </main>
     <script src="js/script.js"></script>
 </body>
 </html>
