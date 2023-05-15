@@ -1,17 +1,17 @@
-const userAge = document.getElementById('userAge').value
-const travelDistance = document.getElementById('travelDistance').value
+const userAge = document.getElementById('userAge')
+const travelDistance = document.getElementById('travelDistance')
 const button = document.querySelector('#ticket_price .ivy_submit_btn')
 let discount;
-    if (userAge < 18){
+let ticketPrice;
+
+button.addEventListener('click', function(){
+        if (userAge.value < 18){
         discount = 0.194;
-    } else if (userAge > 65){
+    } else if (userAge.value > 65){
         discount = 0.377;
     } else {
         discount = 0;
     }
-let ticketPrice = travelDistance * 0.233 * (1 - discount)
-
-button.addEventListener('click', function(){
+    ticketPrice = travelDistance.value * 0.233 * (1 - discount)
     document.getElementById('output').innerHTML = 'Il prezzo del biglietto ammonta a :' + ticketPrice.toFixed(2) + '€';
-
 })
