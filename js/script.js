@@ -5,7 +5,7 @@ let discount;
 let ticketPrice;
 
 button.addEventListener('click', function(){
-        if (userAge.value < 18){
+    if (userAge.value < 18){
         discount = 0.194;
     } else if (userAge.value > 65){
         discount = 0.377;
